@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Utility Tools</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light py-4">
+
+    <div class="container-sm" style="max-width: 500px;">
+
+
+        <div class="card shadow-sm mb-4 p-4">
+            <h4 class="text-primary mb-3">Aroje Delivery Company</h4>
+            <p class="small text-muted">Convert your delivery address to lowercase to prevent delivery errors.</p>
+            <input type="text" id="addressInput" class="form-control mb-2" placeholder="Enter your delivery address">
+            <button class="btn btn-primary w-100" onclick="lowerCase()">Convert</button>
+            <div id="result" class="mt-2 small">Your address will appear here...</div>
+        </div>
+
+        <div class="card shadow-sm mb-4 p-4">
+            <h4 class="text-warning mb-3">Remove Extra Spaces</h4>
+            <textarea id="Input" class="form-control mb-2" rows="3" placeholder="Enter your essay here"></textarea>
+            <button class="btn btn-warning w-100" onclick="removeExtraSpaces()">Remove Spaces</button>
+            <div id="essayCorrect" class="mt-2 small">Your corrected text will show here...</div>
+        </div>
+
+        <div class="card shadow-sm mb-4 p-4">
+            <h4 class="text-info mb-3">Discount Checker</h4>
+            <input type="number" id="cartNo" class="form-control mb-2" placeholder="Enter number of items in your cart">
+            <button class="btn btn-info w-100" onclick="checkItems()">Check Discount</button>
+            <div id="discountCheck" class="mt-2 small">Your discount status shows here...</div>
+        </div>
+
+        <div class="card shadow-sm mb-4 p-4">
+            <h4 class="text-dark mb-3">LAUTECH Weather Station</h4>
+            <input type="number" id="weather" class="form-control mb-2" placeholder="Temperature (in degrees)">
+            <button class="btn btn-dark w-100" onclick="checkWeather()">Check</button>
+            <div id="weatherStatus" class="mt-2 small">Your weather status shows here...</div>
+        </div>
+
+        <div class="card shadow-sm mb-4 p-4">
+            <h4 class="text-danger mb-3">SQI Clinic - BMI Checker</h4>
+            <input type="number" id="height" class="form-control mb-2" placeholder="Height (m)">
+            <input type="number" id="weight" class="form-control mb-2" placeholder="Weight (kg)">
+            <button class="btn btn-danger w-100" onclick="checkBMI()">Check</button>
+            <div id="showStatus" class="mt-2 small">Check your condition here...</div>
+        </div>
+        <div class="card shadow-sm mb-4 p-4">
+            <h4 class="text-secondary mb-3">Username Validator</h4>
+            <input type="text" id="username" placeholder="Enter your username" class="form-control mb-2">
+            <button onclick="checkUsername()" class="btn btn-primary">Check Username</button>
+            <p id="userStatus"></p>
+
+        </div>
+        <div class="card shadow-sm mb-4 p-4">
+            <h4 class="text-secondary mb-3">Kano Airport - Luggage Weight</h4>
+            <input type="number" id="luggageWeight" class="form-control mb-2" placeholder="Weight (kg)">
+            <button class="btn btn-secondary w-100" onclick="checkWeight()">Check</button>
+            <div id="weightStatus" class="mt-2  small">Your result shows here...</div>
+        </div>
+        <div class="card shadow-sm mb-5 p-4">
+            <h4 class="text-danger mb-3">OAU Student Portal</h4>
+            <input type="email" id="email" class="form-control mb-2" placeholder=" Enter your email">
+            <button class="btn btn-danger w-100" onclick="checkEmail()">Check Email</button>
+            <div id="emailStatus" class="mt-2 small"></div>
+        </div>
+        <div class="card shadow-sm mb-4 p-4">
+            <h4 class="text-primary mb-3">Enugu Grammar School - Grade Checker</h4>
+            <input type="number" id="score" class="form-control mb-2" placeholder="Enter your score">
+            <button class="btn btn-primary w-100" onclick="checkGrade()">Check Grade</button>
+            <div id="scoreStatus" class="mt-2  small">Your grade shows here...</div>
+        </div>
+
+        <div class="card shadow-sm mb-5 p-4">
+            <h4 class="text-success mb-3">University of Katangua</h4>
+            <p class="text-muted small">Courses Offered: Medicine, Engineering, Sciences, Arts</p>
+            <input type="number" id="jambScore" class="form-control mb-2" placeholder="Your JAMB Score">
+            <input type="text" id="course" class="form-control mb-2" placeholder="Your Choice Course">
+            <button class="btn btn-success w-100" onclick="checkEligibity()">Check Eligibility</button>
+            <div id="checkHere" class="mt-2 small">Your eligibity status will show here...</div>
+        </div>
+        <div class="card shadow-sm mb-5 p-4">
+            <h4 class="text-primary mb-3">Daniel Supermarket</h4>
+            <input type="number" id="price" class="form-control mb-2" placeholder="Your goods price">
+            <button class="btn btn-primary w-100" onclick="checkDiscountPrice()">Check Eligibility</button>
+            <div id="checkDiscount" class="mt-2 small">Your discounted price will show here...</div>
+        </div>
+        <div class="card shadow-sm mb-5 p-4">
+            <h4 class="text-success mb-3">INEC OFFICE</h4>
+            <input type="number" id="birthYear" class="form-control mb-2" placeholder=" Enter your year of birth">
+            <button class="btn btn-success w-100" onclick="checkAgeStatus()">Check Eligibility</button>
+            <div id="ageStatus" class="mt-2 small">Your Voting eligibity status will show here...</div>
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
